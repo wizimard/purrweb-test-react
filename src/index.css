@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Gilroy-Regular.ttf') format('truetype'),
+    url('./assets/fonts/Gilroy-Regular.woff') format('woff'),
+    url('./assets/fonts/Gilroy-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Gilroy-Medium.ttf') format('truetype'),
+    url('./assets/fonts/Gilroy-Medium.woff') format('woff'),
+    url('./assets/fonts/Gilroy-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Gilroy-SemiBold.ttf') format('truetype'),
+    url('./assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('./assets/fonts/Gilroy-SemiBold.woff2') format('woff2');
+}
+
+html {
+  box-sizing: border-box;
+  
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+
+  min-height: 100%;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+  
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+
+  color: #0B1332;
+}
+body, #root, .App {
+  height: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fz-36 {
+  font-size: 36px;
+  line-height: 42px;
+}
+.fz-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
+.fz-14 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.fz-22 {
+  font-size: 22px;
+  line-height: 28px;
+}
+.fz-20 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.fz-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.fz-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.fz-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.semibold {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+/* Authentication START */
+.auth {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  animation-duration: 200ms;
+}
+.auth__title {
+  margin-bottom: 48px;
+
+  color: #0B1332;
+
+  text-align: center;
+}
+.auth__form {
+  padding: 80px 72px 60px 72px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: #FFFFFF;
+
+  box-shadow: 0px 12px 26px rgba(232, 233, 236, 0.57);
+  border-radius: 24px;
+}
+.auth__form .btn[type="submit"] {
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+.auth__change-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.auth-register {
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.auth-register .auth {
+  flex-shrink: 0;
+
+  transition: all 200ms;
+}
+.auth__back {
+  position: absolute;
+  top: 80px;
+  left: 8.3%;
+}
+@media (max-width: 1000px) {
+  .auth {
+    padding-top: 56px;
+  }
+  .auth__back {
+    top: 56px;
+    left: 4.2%;
+  }
+}
+@media (max-width: 600px) {
+  .auth {
+    padding: 20px 4.3% 12px 4.3%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .auth__form {
+    width: 100%;
+    padding: 80px 31.5px 60px 31.5px;
+  }
+  .auth__back {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+/* Authentication END */
+
+.spinner {
+  animation-name: spinnerRotate;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spinnerRotate {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

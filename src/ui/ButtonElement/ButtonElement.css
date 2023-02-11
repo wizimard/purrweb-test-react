@@ -1,0 +1,90 @@
+.btn {
+  width: 280px;
+  height: 48px;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+}
+@media (max-width: 350px) {
+  .btn {
+    width: 250px;
+    height: 45px;
+  }
+}
+
+.btn-primary {
+  background: #466EFA;
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background: #113ACA;
+}
+.btn-primary:focus {
+  border: 5px solid #F2F3F4;
+}
+.btn-primary svg {
+  fill: #FFFFFF;
+}
+.btn-secondary {
+  background: #DAE2FF;
+  color: #466EFA;
+}
+.btn-secondary:hover {
+  color: #113ACA;
+}
+.btn-secondary:focus {
+  border: 5px solid #F2F3F4;
+}
+.btn-secondary svg {
+  fill: #466EFA;
+}
+.btn-primary:disabled, .btn-secondary:disabled {
+  color: #FFFFFF;
+  background: #E5EBFF;
+}
+.btn-text-primary, .btn-text-secondary {
+  width: auto;
+  height: auto;
+  padding: 8px;
+
+  background: none;
+  border-radius: 16px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+}
+.btn-text-primary:focus, .btn-text-secondary:focus {
+  background: #F2F3F4;
+}
+.btn-text-primary {
+  color: #466EFA;
+}
+.btn-text-primary svg {
+  fill: #466EFA;
+}
+.btn-text-primary:hover {
+  color: #113ACA;
+}
+.btn-text-primary:hover svg {
+  fill: #113ACA;
+}
+.btn-text-secondary {
+  color: #6F7488;
+}
+.btn-text-secondary svg {
+  fill: #6F7488;
+}
+.btn-text-secondary:hover {
+  color: #0B1332;
+}
+.btn-text-secondary:hover svg {
+  fill: #0B1332;
+}
