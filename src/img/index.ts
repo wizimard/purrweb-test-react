@@ -6,3 +6,4 @@ export { default as EyeCloseSvg } from './EyeCloseSvg';
 export { default as SpinnerSvg } from './SpinnerSvg';
 export { default as ArrowLeftSvg } from './ArrowLeftSvg';
 export { default as ArrowDownSvg } from './ArrowDownSvg';
+export { default as EditSvg } from './EditSvg';

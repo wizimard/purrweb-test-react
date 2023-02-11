@@ -1,13 +1,13 @@
 import React from "react";
 import { useAppSelector } from "../../hooks/redux";
-import EditSvg from "../../img/EditSvg";
+import { EditSvg } from "../../img";
 import { ButtonElement } from "../../ui";
+
+import Faq from "./Faq";
 
 import ActivityImagePng from '../../assets/img/image.png';
 
-
 import './Home.css';
-import Faq from "./Faq";
 
 const FaqData = [
   {
